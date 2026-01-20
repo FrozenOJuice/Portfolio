@@ -4,30 +4,51 @@ export default function AboutSection() {
       id="about"
       className="scroll-mt-24 border-b border-foreground/10 bg-surface px-6 py-24 sm:px-10 lg:px-16"
     >
-      <div className="mx-auto flex w-full max-w-5xl flex-col gap-10">
-        <div className="flex items-end justify-between gap-6">
-          <h2 className="font-display text-3xl text-foreground sm:text-4xl">
-            About
-          </h2>
+      <div className="mx-auto flex w-full max-w-5xl flex-col items-center gap-10 text-center">
+        <div className="flex w-full flex-col items-center gap-3">
           <span className="text-sm uppercase tracking-[0.25em] text-muted">
             01
           </span>
-        </div>
-        <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr]">
-          <p className="text-lg leading-relaxed text-muted">
-            I help teams shape product narratives, translate vision into
-            prototypes, and ship polished interfaces. My background spans
-            design systems, brand storytelling, and full-stack engineering.
+          <h2 className="font-display text-3xl text-foreground sm:text-4xl">
+            About
+          </h2>
+          <p className="max-w-2xl text-lg leading-relaxed text-muted">
+            I am a computer science student who enjoys turning ideas into
+            thoughtful digital experiences. I like building clean interfaces,
+            learning new technologies, and collaborating with people who care
+            about the details.
           </p>
-          <div className="rounded-3xl border border-foreground/10 bg-surface p-6 text-sm text-muted">
-            <p className="text-foreground">
-              Highlights
+        </div>
+        <div className="grid w-full gap-6 text-left lg:grid-cols-2">
+          <div className="rounded-3xl border border-foreground/10 bg-background/80 p-6">
+            <h3 className="text-lg font-semibold text-foreground">
+              What I want next
+            </h3>
+            <p className="mt-3 text-sm leading-relaxed text-muted">
+              I want to work on impactful products where I can grow as a
+              software engineer, deepen my systems knowledge, and ship features
+              that make people’s lives easier.
             </p>
-            <ul className="mt-4 space-y-3">
-              <li>10+ years crafting web experiences</li>
-              <li>Led product design for SaaS platforms</li>
-              <li>Partnered with founders on MVP launches</li>
-            </ul>
+          </div>
+          <div className="rounded-3xl border border-foreground/10 bg-background/80 p-6">
+            <h3 className="text-lg font-semibold text-foreground">Skills</h3>
+            <div className="mt-4 flex flex-wrap gap-3">
+              {[
+                "TypeScript",
+                "React + Next.js",
+                "Node.js",
+                "APIs",
+                "UI design",
+                "Problem solving",
+              ].map((skill) => (
+                <span
+                  key={skill}
+                  className="rounded-full border border-foreground/15 px-3 py-1 text-xs uppercase tracking-[0.2em] text-muted"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </div>
